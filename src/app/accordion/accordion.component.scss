@@ -1,0 +1,58 @@
+ .accordion{
+    background: #fff;
+    border: 1px solid #cdcdcd;
+    margin: 4px 0;
+    display:flex;
+    flex-flow:nowrap column;
+}
+
+.card-wrapper{
+  background: salmon;
+  height: 120px;
+  display: flex;
+  .thumbnail{
+    width: 120px;
+    height:120px;
+    border:1px solid #223acd;
+    img{
+      width: 100px;
+      height: 100px;
+      background: darkslategray;
+    }
+  }
+}
+
+button{
+  margin: 10px 0;
+  width: 100%;
+  height: 18px;
+ display: flex;
+border: none;
+justify-content: center;
+ 
+}
+.icon{
+  width:12px;
+  height:12px;
+  line-height: 12px;
+  align-items: center;
+  font-style: normal;
+  margin:auto;
+ &:before{
+   margin:auto;
+ }
+   &.arrow-up{
+     &:before{
+      display: block;
+      content:'\0025B2';
+     }
+  }
+   &.arrow-down{
+     &:before{
+       display: block;
+        content:'\0025BC';
+   
+     }
+    
+  }
+}
